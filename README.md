@@ -19,8 +19,8 @@ One event accumulates atoms from many articles. This creates a machine-readable 
 ## Installation
 
 ```bash
-git clone https://github.com/sannuta/newsatom-lite
-cd newsatom-lite
+git clone https://github.com/sannuta/news-atom-lite
+cd news-atom-lite
 pip install -r requirements.txt
 ```
 
