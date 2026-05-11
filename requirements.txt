@@ -1,0 +1,10 @@
+pysbd>=0.3.4
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Install only the backend(s) you need:
+# pip install openai                 # OpenAI backend
+# pip install anthropic              # Anthropic backend
+# pip install huggingface-hub        # HuggingFace backend
+# pip install torch transformers     # Local backend
+# (Ollama backend needs no Python packages — just Ollama running locally)
