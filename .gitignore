@@ -7,3 +7,4 @@ __pycache__/
 !examples/*.jsonl
 venv/
 .venv/
+.claude/
