@@ -83,7 +83,7 @@ Override the default model with `--model`:
 
 ```bash
 python extract.py --file article.txt --backend openai --model gpt-4o
-python extract.py --file article.txt --backend anthropic --model claude-sonnet-4-20250514
+python extract.py --file article.txt --backend anthropic --model claude-sonnet-4-5
 python extract.py --file article.txt --backend ollama --model mistral
 ```
 

@@ -43,7 +43,7 @@ class AnthropicBackend(ModelBackend):
             messages=[
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.1 if "claude-3" not in self.model else None,
+            temperature=0.1,
         )
 
         return message.content[0].text

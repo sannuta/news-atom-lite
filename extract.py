@@ -150,7 +150,7 @@ examples:
     # ── Step 6: Reserve IDs and stamp wrapper fields ───────────────────────────
     print("→ Stamping wrapper fields...")
     output_dir = args.output_dir
-    org_prefix = args.org_prefix or org
+    org_prefix = args.org_prefix
 
     event_start, atom_start = get_next_counters(
         output_dir=output_dir,

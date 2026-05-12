@@ -201,7 +201,7 @@ def main():
         model_path=args.model_path,
     )
     model_id = args.model or args.model_path or args.backend
-    org_prefix = args.org_prefix or args.org
+    org_prefix = args.org_prefix
 
     Path(args.output_dir).mkdir(parents=True, exist_ok=True)
     events_path = Path(args.output_dir) / "events.jsonl"
