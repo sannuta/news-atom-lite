@@ -3,14 +3,21 @@
 Extract structured **Events** and **Atoms** from news articles using any language model.
 
 ---
+# News Atom Lite
 
-## What are News Atoms?
+> A structured knowledge extraction tool for journalism.
 
-A **News Atom** is a structured unit of journalistic knowledge. It separates two things that journalism conflates:
+Journalism produces vast amounts of verified, attributed, timestamped knowledge — and then buries it in prose. **News Atom Lite** extracts that knowledge into structured records: discrete events and the sentence-level envelopes that document them.
 
-**Events** — what happened in the world. Discrete real-world happenings with agents, actions, dates, and locations. The same event can appear across many articles over time.
+This is a simplified implementation of the [News Atom](https://newsatom.xyz) schema — a metadata blueprint for building a machine-readable system of primary record for journalism. News Atom Lite formalises two schemas: **Events v2.0** and **News Atom Lite** (sentence-level knowledge units), and provides a model-agnostic CLI to extract them from any article using any language model.
 
-**Atoms** — how journalism documented it. Sentence-level records capturing the exact words used, who was quoted, what was attributed to whom, whether it was a direct quote, and what type of information the journalist was conveying.
+The extraction rules are drawn from the [News Atom](https://newsatom.xyz) standard, developed by [Sannuta Raghu](https://newsatom.xyz), and shared here as part of a journalism commons — a foundation others can build on.
+
+---
+
+An EVENT is a real-world happening that exists independently of how any article describes it. The same event occurred once, on a specific date, with specific actors, regardless of how many articles report it. Events are described using structured fields: agent, participants, action, object, location, date.
+
+An ATOM is a sentence-level record of how a specific event was reported. Where the event captures what happened, the atom captures how journalism documented it — the exact words used, who was quoted, what was attributed to whom, and whether the sentence reports the event as a fact or interprets its meaning. Every atom is anchored to one or more events via event_label.
 
 One event accumulates atoms from many articles. This creates a machine-readable system of primary record for journalism.
 
