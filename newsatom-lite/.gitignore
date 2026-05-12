@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+.DS_Store
+*.jsonl
+!examples/*.jsonl
+venv/
+.venv/
+.claude/
+.newsatom_counters.json
