@@ -1,10 +1,5 @@
 # News Atom Lite
 
-Extract structured **Events** and **Atoms** from news articles using any language model.
-
----
-# News Atom Lite
-
 > A structured knowledge extraction tool for journalism.
 
 Journalism produces vast amounts of verified, attributed, timestamped knowledge — and then buries it in prose. **News Atom Lite** extracts that knowledge into structured records: discrete events and the sentence-level envelopes that document them.
